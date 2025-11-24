@@ -1,13 +1,12 @@
-# ML_IDCard_Segmentation (Pytorch) - WIP
-Machine Learning Project to identify an ID Card on an image.  
+# ID Card Segmentation using PyTorch & OpenCV
+A Deep Learning–based Image Segmentation Project to identify an ID Card on an image.  
 
 ### Objectives
 The goal of this project is to recognize a ID Card on a photo, cut it out using semantic segmentation and to 
 transform the perspective so that you get a frontal view of the ID Card.
 
 ## Additional Information
-Dataset: [MIDV-500](https://arxiv.org/abs/1807.05786)   
-Pytorch Version: 1.7.1 CUDA 11.2
+Dataset: [MIDV-500](https://arxiv.org/abs/1807.05786)  
 
 Trained on a NVIDIA GeForce RTX 3090
 
@@ -47,6 +46,17 @@ Starts Tensorboard Visualisation.
 ```
 tensorboard --logdir=logs/
 ```
+## Project Structure 
+ML_IDCard_Segmentation_Pytorch/
+│
+├── pretrained/            # Pretrained segmentation model
+├── data/                  # Sample images
+├── utils/                 # Helper scripts
+├── models/                # Network architecture
+├── inference.py           # Run model inference
+├── train.py               # Training script (if required)
+├── README.md              # Documentation
+└── requirements.txt       # Required packages
 
 ## Background Information
 
@@ -73,7 +83,6 @@ Example:
 Intersection over Unit:  
 0.9939
 
-Pipeline Example:  
-![Pipeline](assets/pipeline.png "Workflow Pipeline")
-
+## Author
+Prerna 
 
