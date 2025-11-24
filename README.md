@@ -5,6 +5,20 @@ A Deep Learning–based Image Segmentation Project to identify an ID Card on an 
 The goal of this project is to recognize a ID Card on a photo, cut it out using semantic segmentation and to 
 transform the perspective so that you get a frontal view of the ID Card.
 
+## Problem Statement 
+In many real-world scenarios, ID cards are photographed with cluttered backgrounds, varying lighting, or partial occlusions.
+This makes it difficult for OCR systems or verification platforms to process them accurately.
+
+Goal:
+Build a system that accurately segments ID cards from an image so they can be processed further.
+
+## Technologies used
+Language - Python
+Deep Learning - PyTorch
+Computer Vision - OpenCV
+
+
+
 ## Additional Information
 Dataset: [MIDV-500](https://arxiv.org/abs/1807.05786)  
 
@@ -49,14 +63,14 @@ tensorboard --logdir=logs/
 ## Project Structure 
 ML_IDCard_Segmentation_Pytorch/
 │
-├── pretrained/            # Pretrained segmentation model
-├── data/                  # Sample images
-├── utils/                 # Helper scripts
-├── models/                # Network architecture
-├── inference.py           # Run model inference
-├── train.py               # Training script (if required)
-├── README.md              # Documentation
-└── requirements.txt       # Required packages
+├── pretrained/             Pretrained segmentation model
+├── data/                   Sample images
+├── utils/                  Helper scripts
+├── models/                 Network architecture
+├── inference.py            Run model inference
+├── train.py                Training script (if required)
+├── README.md               Documentation
+└── requirements.txt        Required packages
 
 ## Background Information
 
@@ -82,6 +96,10 @@ Example:
 ## Results for validation set (trained on the complete dataset)
 Intersection over Unit:  
 0.9939
+
+## Conclusion 
+This project successfully demonstrates how deep learning can be used to perform accurate document segmentation.
+By isolating the ID card from any background, the system enhances the accuracy of downstream tasks such as OCR, verification, and classification.
 
 ## Author
 Prerna 
