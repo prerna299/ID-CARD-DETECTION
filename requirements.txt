@@ -1,0 +1,17 @@
+matplotlib
+numpy
+pandas
+scikit-learn
+opencv-python
+opencv-contrib-python
+pytesseract
+Pillow
+torch
+torchvision
+torchaudio
+tqdm
+scikit-image
+seaborn
+xgboost
+jupyter
+librosa
